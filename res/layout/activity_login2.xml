@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="60dp"
+            android:letterSpacing="0.1"
+            android:text="Welcome"
+            android:textColor="#ffff"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:helperText="Required*"
+            android:padding="20dp"
+            android:layout_marginTop="150dp"
+            app:helperTextEnabled="true"
+            app:counterEnabled="true"
+           app:counterMaxLength="40"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="#DA1919">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custome_input"
+                android:drawableStart="@drawable/ic_email"
+                android:ems="10"
+                android:hint="@string/prompt_email" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                app:endIconMode="password_toggle"
+                app:helperText="Required*"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="#DA1919">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custome_input"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:ems="10"
+                    android:hint="@string/prompt_password" />
+
+                <Button
+                    android:id="@+id/btnLogIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_rounded"
+                    android:shadowColor="#FFFFFF"
+                    android:text="      LOG IN"
+                    android:drawableEnd="@drawable/baseline_login"
+                    android:paddingEnd="10dp"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
